@@ -9,7 +9,7 @@
 
 #include "IniFileParser.hpp"
 
-#include <regex>
+#include <array>
 #include <fstream>
 #include <iostream>
 
