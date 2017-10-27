@@ -4,9 +4,11 @@
 
 int main()
 {
-    IniFileParser inifileparser("./test.ini");
+    IniFileParser inifileparser("../Sample/test.ini");
 
     std::string values;
+
+    inifileparser.GetValuesToString("sys_table", "column_info", values);
 
     inifileparser.GetValuesToString("test_1", "table_type", values);
     std::cout << " test_1  table_type " << values << std::endl;
